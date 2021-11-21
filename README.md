@@ -75,9 +75,9 @@ Eye detection for glasses data generation to use dataset of object detection
    This loss function's policy measure gap between prediction's eyes angle and ground truth's.
    For smoothness in model learning, the loss function was made into the following formula.
 
- ![gif (1)](https://user-images.githubusercontent.com/59654033/142753283-869e02bc-a74b-4088-bd88-2f7424ecb477.gif)
+   ![gif (1)](https://user-images.githubusercontent.com/59654033/142753283-869e02bc-a74b-4088-bd88-2f7424ecb477.gif)
 
- 2 of arctan values are the angle between images's x axis and line formed by two points about each prediction and ground truth. 
+   2 of arctan values are the angle between images's x axis and line formed by two points about each prediction and ground truth. 
  
  The graph of the formula looks like this:
  ![Animation2](https://user-images.githubusercontent.com/59654033/142755900-d356d4bf-abbd-4061-a466-23f2ba93d4fa.gif)
