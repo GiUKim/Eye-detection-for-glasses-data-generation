@@ -79,7 +79,7 @@ Eye detection for glasses data generation to use dataset of object detection
 
    2 of arctan values are the angle between images's x axis and line formed by two points about each prediction and ground truth. 
  
- The graph of the formula looks like this:
+   The graph of the formula looks like this:
  ![Animation2](https://user-images.githubusercontent.com/59654033/142755900-d356d4bf-abbd-4061-a466-23f2ba93d4fa.gif)
 
 ## 4. Putting glasses image on original face using predicted eye points
