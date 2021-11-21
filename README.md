@@ -6,7 +6,6 @@ Eye detection for glasses data generation to use dataset of object detection
 ### 2. Compose train/val dataset
 ### 3. CNN model architecture and custom loss function
 ### 4. Putting glasses image on original face using predicted eye points
-### 5. Usage(Summary)
 
 ---
 
@@ -32,6 +31,8 @@ Eye detection for glasses data generation to use dataset of object detection
 + x_test.npy, x_train.npy, y_test.npy, y_train.npy are saved at base directory
 
 ## 3. CNN model architecture and custom loss function
++ "python detect.py"
++ if you use pre-trained model, comment out line 198 (training execute code) and run after edit line 200 to model path.
  
    ```
     inputs = tf.keras.layers.Input(shape=(96, 96, 1))
@@ -73,4 +74,23 @@ Eye detection for glasses data generation to use dataset of object detection
    
    This loss function's policy measure gap between prediction's eyes angle and ground truth's.
    For smoothness in model learning, the loss function was made into the following formula.
+
+ ![gif (1)](https://user-images.githubusercontent.com/59654033/142753283-869e02bc-a74b-4088-bd88-2f7424ecb477.gif)
+
+ 2 of arctan values are the angle between images's x axis and line formed by two points about each prediction and ground truth. 
+ 
+ The graph of the formula looks like this:
+ ![Animation2](https://user-images.githubusercontent.com/59654033/142755900-d356d4bf-abbd-4061-a466-23f2ba93d4fa.gif)
+
+## 4. Putting glasses image on original face using predicted eye points
+
+ + Reference the code of put glasses [Put Glasses](https://github.com/kairess/bear-face-detection)
+ + first, edit line 201~204 of [put_glasses.py] model path, dataset path, glasses png path, result path
+ + run "put_glasses.py". The code also provide yolo label of genereated glasses.
+   ![image](https://user-images.githubusercontent.com/59654033/142759694-b34cdc38-0d0a-4d72-a3fa-33282b867f64.png)
    
+   ![image](https://user-images.githubusercontent.com/59654033/142759740-1bc10042-6d9b-4679-9243-33dae904164b.png)
+
+
+
+ 
