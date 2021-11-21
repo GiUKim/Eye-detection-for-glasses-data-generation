@@ -86,7 +86,7 @@ Eye detection for glasses data generation to use dataset of object detection
 
  + Reference the code of put glasses [Put Glasses](https://github.com/kairess/bear-face-detection)
  + first, edit line 201~204 of [put_glasses.py] model path, dataset path, glasses png path, result path
- + run "put_glasses.py". The code also provide yolo label of genereated glasses.
+ + run "put_glasses.py". The code also provide yolo label of genereated glasses automatically.
   
    ![image](https://user-images.githubusercontent.com/59654033/142759694-b34cdc38-0d0a-4d72-a3fa-33282b867f64.png)
    
