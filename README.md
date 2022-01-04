@@ -12,9 +12,8 @@ Eye detection for glasses data generation to use dataset of object detection
 ## 1. Labeling 2 of eye points for training of CNN model
 + edit line 136 of [label_eye_point.py] "dataset_dir = ???" to your dataset location (the images directory path)
 + "python label_eye_point.py"
-+ labelimg 2 of eye points to mouse click( must be labeled 2 points )
++ labelimg 2 of eye points to mouse click
 
-    <img src="https://user-images.githubusercontent.com/59654033/142639989-f8fa989f-c345-45bd-b8ee-8788b788b792.png" width="480" height="300">
     
 + if R mouse click, remove 1 label
 + if press 'a' key, move to previous image
